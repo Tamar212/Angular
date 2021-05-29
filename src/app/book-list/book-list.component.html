@@ -1,0 +1,30 @@
+
+<p class="one">book-list works!</p>
+<div *ngFor="let book of bookList"><br>
+     
+    <span style="color: rgb(77, 0, 128)" *ngIf="book.id!=null">{{book.id}}</span><br>
+    <span  *ngIf="book.id==null" class="isnull">id</span><br>
+
+    <span  style="color:rgb(192, 44, 160)" *ngIf="book.title!=''">{{book.title}}</span><br>
+    <span  *ngIf="book.title==''" class="isnull">title</span><br>
+
+    <span style="color:rgb(155, 76, 138)" *ngIf="book.author!=''">{{book.author}}</span><br>
+    <span  *ngIf="book.author==''" class="isnull">author</span><br>
+    <!-- <a routerLink="book/{{book.id}}" >click here to see one book</a> -->
+    
+    
+ 
+</div><br>
+<p *ngIf="isempty()">no books</p>
+<p *ngIf="!isempty()">סה"כ {{cnt()}} ספרים</p>
+<input type="text"  placeholder="enter" [(ngModel)]="text">
+
+<div>search  {{text}} </div>
+<div *ngFor="let book of bookList| search:text">
+<div>קוד:{{book.id}}</div>
+<div>שם ספר:{{book.title}}</div>
+<div>שם המחבר:{{book.author}}</div>
+</div>
+ 
+
+

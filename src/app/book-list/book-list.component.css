@@ -1,0 +1,12 @@
+.isnull{
+    color:gray;
+    font-style: italic;
+}
+.place{
+    left: 20vh;
+}
+
+.one{
+    background-color:purple;
+    font-size: 30px;
+}

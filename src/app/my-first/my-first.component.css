@@ -1,0 +1,18 @@
+.danger{
+    background-color: red;
+    color:black;
+}
+
+.info{
+    background-color: blue;
+    color:white;
+}
+
+.big-text{
+    font-size: 34px;
+    font-weight: 800;
+}
+
+.border{
+    border:solid 1px black;
+}

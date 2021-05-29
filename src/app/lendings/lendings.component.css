@@ -1,0 +1,10 @@
+.isnull{
+    background-color:palevioletred;
+}
+.notnull{
+    background-color:lightseagreen;
+}
+.one{
+    background-color:purple;
+    font-size: 30px;
+}

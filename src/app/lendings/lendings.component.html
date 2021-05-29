@@ -1,0 +1,10 @@
+<p class="one">lendings works!</p>
+<div *ngFor="let lendings of lends" [ngStyle]="{'background-color':lendings.returnDate!=null?'lightseagreen':'palevioletred'}"><br>     
+     <span>id : {{lendings.id+"   "}},</span>    
+     <span>name : {{lendings.borrowerLastName+"   "+lendings.borrowerFirstName+"   "}}, </span>
+     <span>date : {{lendings.landingDate|date:'EEEE, MMMM d, y'+"   "}} </span>
+     <span>returndate : {{lendings.returnDate|date:'EEEE, MMMM d, y'}}</span>
+     <span>returnDate</span><br>  
+     <div *ngIf="isReturned(lendings)">נא להחזיר</div> 
+</div><br>
+

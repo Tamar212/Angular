@@ -1,0 +1,9 @@
+.active{
+    color: teal;
+    background-color:yellow;
+    font-size: large;
+}
+.one{
+    background-color:purple;
+    font-size: 30px;
+}

@@ -1,0 +1,19 @@
+<h1 [class.h1]="ismyusername"[ngStyle]="styleObj1">my text works!</h1>
+<div >{{mytext+myusername}}<p *ngIf="checkUser()">הכנס את שמך</p></div>
+
+<p>{{zion}}</p>
+
+<input  [class.input]="checkUser()"[ngStyle]=styleObj2 type="text" [(ngModel)]="myusername"/>
+
+
+<p *ngFor="let qustion of arrq ;let i=index">שאלה {{i}}:{{qustion}}</p>
+
+<button (click)=cheaktext()>cheack</button>
+
+
+
+
+<p class="note" *ngIf ="zion===100">ציון מושלם</p>
+<p class="note" *ngIf ="zion===0">ציון אפס</p>
+
+ 

@@ -1,0 +1,8 @@
+<p class="one">borrower-list works!</p>
+<div *ngFor="let borrower of hasalldetails">
+    <span>{{borrower.tz+"  "+borrower.id+"  "+borrower.age+"  "+(borrower.firstname|my)+"  "+borrower.lastname+"  "+borrower.phonenumber+"  "+borrower.mail}}</span>
+ <a *ngIf="borrower.mail!=''; else elseBlock" href="mailto:{{borrower.mail}} ?subject=Feedback&body=hello to {{borrower.firstname}}">Send Feedback</a>    
+ <ng-template #elseBlock> the phonenumber is: {{borrower.phonenumber}}</ng-template>
+</div>
+ 
+
